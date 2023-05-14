@@ -7,7 +7,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       noIndex: Boolean
       title: String
       description: String
-      image: ContentfulAsset! @link(by: "id", from: "image___NODE")
+      image: ContentfulAsset @link(by: "id", from: "image___NODE")
       sections: [ContentfulLandingPageSection] @link(by: "id", from: "sections___NODE")
     }
 
@@ -21,8 +21,8 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type ContentfulLandingPageContent implements ContentfulReference & ContentfulEntry & Node @dontInfer {
       name: String
-      image: ContentfulAsset! @link(by: "id", from: "image___NODE")
-      links: [ContentfulLink]! @link(by: "id", from: "links___NODE")
+      image: ContentfulAsset @link(by: "id", from: "image___NODE")
+      links: [ContentfulLink!] @link(by: "id", from: "links___NODE")
       primaryText: contentfulLandingPageContentPrimaryTextTextNode @link(by: "id", from: "primaryText___NODE")
       secondaryText: contentfulLandingPageContentSecondaryTextTextNode @link(by: "id", from: "secondaryText___NODE")
     }
