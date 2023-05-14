@@ -24,9 +24,9 @@ if (!spaceId || !accessToken) {
 // starter config
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Landing Page",
+    title: "DataLast Home",
     description:
-      "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
+      "Mainframes and Enteprise Data Storage Services",
   },
   plugins: [
     {
